@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_apps/colors.dart';
 import 'package:food_apps/widgets/big_text.dart';
+import 'package:food_apps/home/food_page_body.dart';
 import 'package:food_apps/widgets/small_text.dart';
 
 class MainFoodPage extends StatefulWidget {
@@ -55,6 +56,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
             ),
 
     ),
+            FoodPageBody(),
           ],
         ),
 

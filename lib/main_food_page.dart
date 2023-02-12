@@ -34,7 +34,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                     BigText(text: "India",color: AppColors.mainColor,size: 27,),
                     Row(
                       children: [
-                        SmallText(text: "Kolkata",color: Colors.black54,),
+                        SmallText(text: "Kolkata",color: Colors.black54,size: 15,),
                         Icon(Icons.arrow_drop_down)
                       ],
                     ),

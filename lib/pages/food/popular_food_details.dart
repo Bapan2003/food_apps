@@ -5,6 +5,7 @@ import 'package:food_apps/widgets/app_icon.dart';
 
 import '../../utils/colors.dart';
 import '../../widgets/big_text.dart';
+import '../../widgets/expanded_widgets.dart';
 import '../../widgets/icon_and_text.dart';
 import '../../widgets/small_text.dart';
 
@@ -86,15 +87,33 @@ class PopularFoodDetail extends StatelessWidget {
                     SizedBox(height: 20,),
                     BigText(text: 'Introduce',size: 30,color: Colors.black54,),
                     SizedBox(height: 20,),
-                    SmallText(text: "biryani is a spiced mix of meat and rice, "
-                        "traditionally cooked over an open fire in a leather pot. "
-                        "It is combined in different ways with a variety of components "
-                        "to create a number of highly tasty"
-                        " and unique flavor combinations.",
-                      // color: Colors.black54,
-                      color: AppColors.signColor,
-                      size: 15,
-                    )
+                    Expanded(child: SingleChildScrollView(
+                      child: ExpandedTextWidget(
+                        text: 'biryani is a spiced mix of meat and rice,'
+                            ' traditionally cooked over an open fire in a '
+                            'leather pot. It is combined in different ways'
+                            ' with a variety of components to create a number'
+                            ' of highly tasty and unique flavor combinations.'
+                            'biryani is a spiced mix of meat and rice,'
+                            ' traditionally cooked over an open fire in a '
+                            'leather pot. It is combined in different ways'
+                            ' with a variety of components to create a number'
+                            ' of highly tasty and unique flavor combinations.''biryani is a spiced mix of meat and rice,'
+                            ' traditionally cooked over an open fire in a '
+                            'leather pot. It is combined in different ways'
+                            ' with a variety of components to create a number'
+                            ' of highly tasty and unique flavor combinations.'
+
+                        ,),))
+                    // SmallText(text: "biryani is a spiced mix of meat and rice, "
+                    //     "traditionally cooked over an open fire in a leather pot. "
+                    //     "It is combined in different ways with a variety of components "
+                    //     "to create a number of highly tasty"
+                    //     " and unique flavor combinations.",
+                    //   // color: Colors.black54,
+                    //   color: AppColors.signColor,
+                    //   size: 15,
+                    // )
                   ],
                 ),
               ),),

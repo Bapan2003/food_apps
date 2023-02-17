@@ -3,8 +3,10 @@ import 'package:food_apps/pages/food/custom_scrollable_page.dart';
 // import 'package:food_apps/pages/food/popular_food_details.dart';
 // import 'package:food_apps/pages/home/main_food_page.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-
-void main() {
+import 'helper/dependancies.dart'as dep;
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+   await dep.init();
   runApp(const MyApp());
 }
 
